@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Central Adventures — Admin Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Central Adventures — Admin</h1>
+    <p class="muted">Use this dashboard to inspect and manage Firestore documents (trips, bookings).</p>
+  </header>
+
+  <main class="admin-main">
+    <section id="auth-section" class="card">
+      <h2>Admin Sign-in</h2>
+      <p class="muted">Sign in with Firebase Email/Password (recommended). The app must be initialized with your Firebase web config first.</p>
+      <div id="config-instructions" class="notice">
+        <strong>Before using:</strong> Add your Firebase web config on this page (see README) as `window.ADMIN_FIREBASE_CONFIG` in DevTools, or create `admin/config.js` (not committed).
+      </div>
+      <form id="login-form" class="form-inline">
+        <input id="admin-email" type="email" placeholder="admin@example.com" required>
+        <input id="admin-password" type="password" placeholder="password" required>
+        <button id="admin-login" type="submit">Sign In</button>
+        <button id="admin-logout" type="button" class="hidden">Sign Out</button>
+      </form>
+      <div id="auth-status" class="muted"></div>
+    </section>
+
+    <section id="data-section" class="card hidden">
+      <h2>Data</h2>
+      <div class="controls">
+        <button id="load-trips">Load Trips</button>
+        <button id="load-bookings">Load Bookings</button>
+      </div>
+
+      <div id="list-container" class="list"></div>
+    </section>
+  </main>
+
+  <footer class="admin-footer muted">Admin dashboard — use safely. See <code>admin/README.md</code>.</footer>
+
+  <script type="module" src="./scripts/admin.js"></script>
+</body>
+</html>
