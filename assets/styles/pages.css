@@ -1,0 +1,14 @@
+/* Page-level styles placeholder
+   Split target: page-specific rules can be moved here (e.g., home, about, gallery pages)
+   For now this file holds placeholders to make a safe, non-breaking split.
+*/
+
+/* Example: hero overrides for the home page (move more rules here as needed) */
+#hero-header {
+  /* keep inherit from main stylesheet; override small items here if needed */
+}
+
+/* Gallery page adjustments */
+#page-gallery .gallery-grid {
+  /* moved/overridden rules can go here in future refactor */
+}

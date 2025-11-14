@@ -431,10 +431,10 @@
 
         /* Home Page Hero */
         #page-home{
-             background: url("/frontend/assets/images/image.png");
+             background: url("/assets/images/image.png");
         }
         #hero-header {
-             background: url("/frontend/assets/images/image.png");
+             background: url("/assets/images/image.png");
             background-size: cover;
             transition: background-color 0.3s, color 0.3s;
             min-height: calc(100vh - 4rem);
